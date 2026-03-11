@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("==============================");
+        System.out.println("Digite seu plano de trabalho:");
+        System.out.println("Plano A.");
+        System.out.println("Plano B.");
+        System.out.println("Plano C.");
+
+        String plano = sc.nextLine();
+
+        System.out.println("Digite seu salario:");
+        double salario = sc.nextDouble();
+        sc.nextLine(); // limpa o buffer
+        System.out.println("==============================");
+
+        double au10 = salario * 1.10;
+        double au15 = salario * 1.15;
+        double au20 = salario * 1.20;
+
+        switch (plano) {
+
+            case "A":
+            case "a":
+                System.out.println("Seu plano é o (A) corresponde a 10% de aumento.");
+                System.out.printf("Seu novo salario é: %.2f", au10);
+                break;
+
+            case "B":
+            case "b":
+                System.out.println("Seu plano é o (B) corresponde a 15% de aumento.");
+                System.out.printf("Seu novo salario é: %.2f", au15);
+                break;
+
+            case "C":
+            case "c":
+                System.out.println("Seu plano é o (C) corresponde a 20% de aumento.");
+                System.out.printf("Seu novo salario é: %.2f", au20);
+                break;
+
+            default:
+                System.out.println("Plano inválido.");
+        }
+        sc.close();
+    }
+}
+    
