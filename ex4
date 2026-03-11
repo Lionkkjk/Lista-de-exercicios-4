@@ -11,9 +11,8 @@ public class Main {
 
         String plano = sc.nextLine();
 
-        System.out.println("Digite seu salario:");
+        System.out.print("Digite seu salario:");
         double salario = sc.nextDouble();
-        sc.nextLine(); // limpa o buffer
         System.out.println("==============================");
 
         double au10 = salario * 1.10;
@@ -46,4 +45,4 @@ public class Main {
         sc.close();
     }
 }
-    
+
