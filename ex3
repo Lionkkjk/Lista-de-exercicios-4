@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("===========================================");
+        System.out.println("Ola aluno(a) a qual periodo você pertence?");
+        System.out.println("M-Matutino.");
+        System.out.println("V-Vespertino.");
+        System.out.println("N-Noturno.");
+        System.out.println("===========================================");
+
+        String periodo = sc.nextLine();
+        switch (periodo) {
+            case "M":
+            case "m":
+                System.out.println("Bom dia!");
+                break;
+
+            case "V":
+            case "v":
+                System.out.println("Boa tarde!");
+                break;
+
+            case "N":
+            case "n":
+                System.out.println("Boa noite!");
+                break;
+        }
+        sc.close();
+    }
+}
