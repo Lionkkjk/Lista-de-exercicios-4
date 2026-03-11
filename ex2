@@ -1,0 +1,67 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+
+        System.out.println("===Clendario anual===");
+        System.out.println("Digite 1 para janeiro.");
+        System.out.println("Digite 2 para fevereiro.");
+        System.out.println("Digite 3 para março.");
+        System.out.println("Digite 4 para maio.");
+        System.out.println("Digite 5 para abril.");
+        System.out.println("Digite 6 para junho.");
+        System.out.println("Digite 7 para julho.");
+        System.out.println("Digite 8 para agosto.");
+        System.out.println("Digite 9 para setembro.");
+        System.out.println("Digite 10 para outubro.");
+        System.out.println("Digite 11 para novembro.");
+        System.out.println("Digite 12 para dezembro.");
+        System.out.println("===Clendario anual===");
+
+        int calendario = sc.nextInt();
+
+        switch (calendario){
+
+            case 1:
+                System.out.println("Janeiro!");
+                break;
+            case 2:
+                System.out.println("Fevereiro!");
+                break;
+            case 3:
+                System.out.println("Março!");
+                break;
+            case 4:
+                System.out.println("Abril!");
+                break;
+            case 5:
+                System.out.println("Maio!");
+                break;
+            case 6:
+                System.out.println("Junho!");
+                break;
+            case 7:
+                System.out.println("Julho!");
+                break;
+            case 8:
+                System.out.println("Agosto!");
+                break;
+            case 9:
+                System.out.println("Setembro!");
+                break;
+            case 10:
+                System.out.println("Outubro!");
+                break;
+            case 11:
+                System.out.println("Novembro!");
+                break;
+            case 12:
+                System.out.println("Dezembro!");
+                break;
+            default:
+                System.out.println("Mês invalido.");
+        }
+        sc.close();
+    }
+}
+
