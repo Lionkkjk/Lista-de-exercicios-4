@@ -41,5 +41,6 @@ public class Main {
             default:
                 System.out.println("Dia invalido.");
         }
+        sc.close();
     }
 }
